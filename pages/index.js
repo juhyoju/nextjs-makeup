@@ -2,5 +2,11 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  return <div>HOME</div>;
+  return (
+    <div>
+      <Head>
+        <title>Home | powder</title>
+      </Head>
+    </div>
+  );
 }
