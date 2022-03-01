@@ -1,8 +1,29 @@
 import "../styles/globals.css";
 import "semantic-ui-css/semantic.min.css";
+import Footer from "../components/Footer";
+import Top from "../components/Top";
+import Gnb from "../components/Gnb";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <div className="wrap">
+      <Top />
+      <Gnb />
+      <Component {...pageProps} />
+      <Footer />
+
+      <style jsx>
+        {`
+          .wrap {
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+            margin: auto;
+          }
+        `}
+      </style>
+    </div>
+  );
 }
 
 export default MyApp;
