@@ -27,9 +27,15 @@ export default function Home() {
         <title>Home | powder</title>
       </Head>
 
-      <Header as="h3">THE BEST</Header>
+      <Header as="h1">THE BEST</Header>
       <Divider />
-      <ItemList list={list} />
+      <ItemList list={list.slice(0, 9)} />
+      {/* slice(0, 9) : index 0 ~ 9 */}
+
+      <Header as="h1">NEW ITEM</Header>
+      <Divider />
+      <ItemList list={list.slice(9)} />
+      {/* slice(9) : index 9 ~ 끝 */}
 
       <style jsx>
         {`

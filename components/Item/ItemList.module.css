@@ -3,6 +3,11 @@
   padding-bottom: 45px;
 }
 
+.item_link {
+  color: inherit;
+  display: block;
+}
+
 .item_name {
   overflow: hidden;
   display: -webkit-box;

@@ -1,3 +1,8 @@
+import { useRouter } from "next/router";
+
 export default function ID() {
-  return <div>ID포함!</div>;
+  const router = useRouter();
+  const { id } = router.query;
+
+  return <div>{id}!</div>;
 }
