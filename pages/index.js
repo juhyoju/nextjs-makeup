@@ -12,7 +12,6 @@ export default function Home() {
 
   function getData() {
     Axios.get(API_URL).then((res) => {
-      console.log("data", res.data);
       setList(res.data);
     });
   }

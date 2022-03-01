@@ -3,7 +3,6 @@ import { Grid } from "semantic-ui-react";
 import styles from "./ItemList.module.css";
 
 export default function ItemList({ list }) {
-  console.log("list", list);
   return (
     <>
       <Grid columns={3}>
