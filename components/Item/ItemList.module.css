@@ -1,0 +1,25 @@
+.item_grid {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.item_name {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 46px;
+}
+
+.item_cate {
+  color: #aaa;
+}
+
+.item_price {
+  font-size: 1.28571429em;
+  line-height: 1.28571429em;
+  color: #e28384;
+  font-weight: 700;
+  margin: 15px 0 0;
+}
