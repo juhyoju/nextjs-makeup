@@ -11,7 +11,7 @@ export default function Item({ info }) {
           className={styles.item_img}
         />
         <div className={styles.item_info}>
-          <span>{info.product_type}</span>
+          <span>{info.type}</span>
           <h2 className={styles.info_name}>{info.name}</h2>
 
           <div className={styles.item_price}>

@@ -13,8 +13,19 @@ export default function ID() {
 
   function getData() {
     Axios.get(API_URL).then((res) => {
-      setInfo(res.data);
+      // setInfo(res.data);
+
+      console.log(res.data);
+      setInfo({
+        id: res.data.id,
+        description: res.data.description,
+        name: res.data.name,
+        image_link: res.data.image_link,
+        price: res.data.price,
+        type: res.data.product_type,
+      });
     });
+    console.log("info1", info);
   }
 
   useEffect(() => {
@@ -22,6 +33,8 @@ export default function ID() {
       getData();
     }
   }, [id]);
+
+  console.log("info2", info);
 
   return <Item info={info} />;
 }
